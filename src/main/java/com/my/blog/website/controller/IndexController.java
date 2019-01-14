@@ -294,6 +294,10 @@ public class IndexController extends BaseController {
         return this.render("links");
     }
 
+    @GetMapping(value = "pay")
+    public String pay(){
+        return this.render("pay");
+    }
     /**
      * 自定义页面,如关于的页面
      */

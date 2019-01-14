@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="themes/default/header::header(null,null)"></div>
+<style>
+    .button {
+        background-color: #4CAF50;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>
+
+<style type="text/css">
+    table.imagetable {
+        font-family: verdana, arial, sans-serif;
+        font-size: 11px;
+        color: #333333;
+        border-width: 1px;
+        border-color: #999999;
+        border-collapse: collapse;
+    }
+
+    table.imagetable th {
+        background: #b5cfd2;
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #999999;
+    }
+
+    table.imagetable td {
+        background: #dcddc0;
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #999999;
+    }
+</style>
+<body style="margin: 0;padding: 0;">
+<div align="center" style="padding: 10% 0 10% 0">
+
+            <img th:src="@{/user/img/pay/epay.jpg}" width="400px" height="600px" alt="支付宝"/>
+            <img th:src="@{/user/img/pay/wx.jpg}" width="400px" height="600px" alt="微信"/>
+</div>
+</body>
+</html>
